@@ -7,38 +7,24 @@ Please find below test case.
 SQL Exercise – Use any SQL engine of your choice unless specified below.
 
  
+Question 1 - Gaps & Islands
+    
+    Use attached file.
+    Country, Category & Dat should be unique. If not, drop lower value.
+    
+    Exercise 1: Identify gaps – Fill with 0.
+    
+    Exercise 2:
+    Identify islands - continuous dates with same value – e.g. 2001-01-01 & 2021-01-02 & 2021-01-03 have value = 3 – Compact data by creating start & end date. In this case Start = 2021-01-01 & End = 2023-01-03.
+    
+    Exercise 3:
+    Create column with a percentage share of value across sum by country
+    
+    Note: Provide SQL code.
 
-Gaps & Islands
-Use attached file.
-Country, Category & Dat should be unique. If not, drop lower value.
-Exercise 1:
-Identify gaps – Fill with 0.
-Exercise 2:
-Identify islands - continuous dates with same value – e.g. 2001-01-01 & 2021-01-02 & 2021-01-03 have value = 3 – Compact data by creating start & end date. In this case Start = 2021-01-01 & End = 2023-01-03.
-Exercise 3:
-Create column with a percentage share of value across sum by country
-Provide SQL code.
-Storage Design
-Use attached file as sample data
-Feel free to make assumption that sample is representative of whole.
-Design storage using SQL (pseudo SQL – Does not have to compile – Interested in idea, way of thinking, concept & approach)
-Feed info:
-Daily received of 500 files.
-File size vary from 10k to 10M rows.
-Daily total estimate volume = 800M records
-300 Locations, across 20 countries.
-30 vendors.
-Usage
-Analytical / non-aggregated queries by country teams
-Most focus on current data (most recent)
-Less frequent but present daily analytical aggregation queries of all data, long history (last 2 years)
-Aim
-Normalize data, define correct data types, transform data, fields etc where you believe it’s appropriate.
-Apply indexes, partitions, parallelization etc where you believe its appropriate.
-Storage option A– Single node SQL Server Enterprise Edition
-Storage option B– AWS S3 Delta Format
-Explain differences in storage design choices depending on environment, alternative ideas if any.
+
  
+
 
 Combinations
 For n = 2, k =2 result would be
